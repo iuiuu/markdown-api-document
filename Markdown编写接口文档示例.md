@@ -33,7 +33,7 @@ C				|报文中该元素在一定条件下出现（Conditional）
 ### 1.6 请求报文结构
 接口只接收两个参数 **RequestData** 和 **SignData** ，其中RequestData的值为请求内容，SignData的值为签名内容。
 
-#### 1.6.1 参数说明
+#### 1.6.1 参数说明ddddz
 **RequestData（请求内容）：** 其明文为每次请求的具体参数，采用 JSON 格式，依次经过 DES 加密（以UTF-8编码、BASE64编码输出结果）和 URLEncode 后，作为 RequestData 的值。  
 
 **SignData（签名内容）：** 请求参数（明文）的MD5加密字符串，用于校验RequestData是否合法。
